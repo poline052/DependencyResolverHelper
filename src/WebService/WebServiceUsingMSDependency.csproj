@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyName>Com.WebService</AssemblyName>
+    <RootNamespace>Com.WebService</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DependencyMapping.Contracts\DependencyMappingContracts.csproj" />
+    <ProjectReference Include="..\DependencyScanner.MSDependencyInjector\DependencyScanner.MSDependencyInjector.csproj" />
+    <ProjectReference Include="..\SampleLibrary\SampleLibrary.csproj" />
+  </ItemGroup>
+
+</Project>
